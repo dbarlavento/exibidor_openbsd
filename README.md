@@ -87,3 +87,16 @@ de vídeos dispostos em ordem aleatória.
 - unzip
 - mplayer
 
+### Configuração do usuário
+
+1. Criação do usuário que executará as atividades do exibidor.
+
+1.1. Por padrão o nome do usuário será "display".
+
+### Configuração do sistema
+
+1. Definir o nome do *host*. Por padrão será adotado: "display@dominio.com"
+
+2. Definir as configurações do X11.
+
+2.2. Definir 
