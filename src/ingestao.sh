@@ -37,7 +37,10 @@ tr ' ' '_' < $nome_antigo > $nome_novo
 # Conta o numero de arquivos na lista
 # Remove o lixo da saida de wc deixando apenas o numero
 # Guarda na variavel em $cont
-cont=$(wc -w $nome_novo | grep -oE '[0-9]{1,}')
+#cont=$(wc -w $nome_novo | grep -oE '[0-9]{1,}')
+
+# Versão em teste da instrução acima.
+cont=$(wc -w < $nome_novo)
 
 # Renomeia os arquivos conforme as listas $nome_antigo e $nome_novo
 while [ $cont -gt 0 ]
